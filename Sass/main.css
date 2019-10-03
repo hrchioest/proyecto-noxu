@@ -1,0 +1,52 @@
+body {
+  background: black;
+  font-family: "Lato", sans-serif;
+  color: white;
+}
+
+header {
+  height: 74px;
+  display: flex;
+  justify-content: space-between;
+}
+header nav {
+  display: flex;
+  flex-direction: row;
+}
+header nav a {
+  font-size: 28px;
+  text-decoration: none;
+  color: white;
+  padding: 8px 0px 13px 13px;
+}
+header nav a .noxu {
+  font-weight: 700;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+}
+header nav ul li a {
+  width: 74px;
+  font-size: 18px;
+  justify-content: space-around;
+  padding: 6px;
+  color: gray;
+}
+header nav ul li a:active {
+  color: white;
+}
+header nav ul li ul {
+  display: none;
+}
+header div input {
+  font-size: 16px;
+  height: 38px;
+}
+header div button {
+  font-size: 16px;
+  width: 77px;
+  height: 38px;
+}
+
+/*# sourceMappingURL=main.css.map */
