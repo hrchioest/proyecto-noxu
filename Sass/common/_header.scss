@@ -1,0 +1,104 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+    a{
+        text-decoration: none;
+        list-style: none;
+        color: white;
+        padding: 8px 0px 13px 13px;
+        font-weight: 700;
+        font-size: 28px;
+        width: 50%;
+            
+    }
+    label{
+        font-size: 34px;
+        border: .5px solid $gray-light;
+        border-radius: 7px;
+        padding: 0px 7px 3px 7px;
+    }
+    
+    input#toggle{
+        display:none;
+        &:checked {
+            border:.5px solid $blue;
+            &~div.nav {
+                display: flex;
+            }
+        }
+    }
+
+    div.nav{
+        display: none;
+        width: 100%;
+        flex-direction: column-reverse;
+        nav{
+            display: flex;
+            z-index: 1;
+            text-decoration: none;
+            list-style: none;
+            ul{
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                li{
+                    &:hover > ul{
+                        display: flex;
+                    }
+                    a{
+                        width: 74px;
+                        font-size:18px;
+                        justify-content: space-around;
+                        padding: 6px;
+                        color:$gray;
+                        &:hover{
+                            color:white;
+                
+                        }                         
+                    }
+                    i{
+                        color:$gray;
+                    
+                    }
+                        
+                    ul{
+                        flex-direction: column;
+                        font-size:18px;
+                        padding: 6px;
+                        color: black;
+                        background:white;
+                        display: none;
+                    }               
+                                
+                }
+            }
+        }
+        div.search{
+            padding-top: 15px;
+            input{
+                font-size: 16px;
+                height: 31.5px;
+                padding-left: 9px;
+                width: 193px;
+                border-radius: 5px;
+            }
+            button{
+                font-size: 16px;
+                width: 77px;
+                height: 38px;
+                border-radius: 5px;
+                background: black;
+                color: $blue;
+                border-color: $blue;
+                &:hover{
+                    background: $blue;
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
+

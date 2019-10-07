@@ -1,0 +1,187 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+header a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+  padding: 8px 0px 13px 13px;
+  font-weight: 700;
+  font-size: 28px;
+  width: 50%;
+}
+header label {
+  font-size: 34px;
+  border: 0.5px solid rgba(255, 255, 255, 0.1);
+  border-radius: 7px;
+  padding: 0px 7px 3px 7px;
+}
+header input#toggle {
+  display: none;
+}
+header input#toggle:checked {
+  border: 0.5px solid #007bff;
+}
+header input#toggle:checked ~ div.nav {
+  display: flex;
+}
+header div.nav {
+  display: none;
+  width: 100%;
+  flex-direction: column-reverse;
+}
+header div.nav nav {
+  display: flex;
+  z-index: 1;
+  text-decoration: none;
+  list-style: none;
+}
+header div.nav nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+header div.nav nav ul li:hover > ul {
+  display: flex;
+}
+header div.nav nav ul li a {
+  width: 74px;
+  font-size: 18px;
+  justify-content: space-around;
+  padding: 6px;
+  color: rgba(255, 255, 255, 0.5);
+}
+header div.nav nav ul li a:hover {
+  color: white;
+}
+header div.nav nav ul li i {
+  color: rgba(255, 255, 255, 0.5);
+}
+header div.nav nav ul li ul {
+  flex-direction: column;
+  font-size: 18px;
+  padding: 6px;
+  color: black;
+  background: white;
+  display: none;
+}
+header div.nav div.search {
+  padding-top: 15px;
+}
+header div.nav div.search input {
+  font-size: 16px;
+  height: 31.5px;
+  padding-left: 9px;
+  width: 193px;
+  border-radius: 5px;
+}
+header div.nav div.search button {
+  font-size: 16px;
+  width: 77px;
+  height: 38px;
+  border-radius: 5px;
+  background: black;
+  color: #007bff;
+  border-color: #007bff;
+}
+header div.nav div.search button:hover {
+  background: #007bff;
+  color: white;
+}
+
+section.main {
+  display: flex;
+  background-image: url("../imagen/hero-background.jpg");
+  background-repeat: no-repeat;
+  height: 436px;
+  background-size: cover;
+  justify-content: space-around;
+}
+section.main div.left {
+  font-size: 24px;
+  height: 350px;
+  width: 224px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: none;
+}
+section.main div.central h1 {
+  font-size: 28px;
+}
+section.main div.central h2 {
+  font-size: 24px;
+  padding: 0px 0px 0px 21px;
+}
+section.main div.right {
+  font-size: 24px;
+  height: 350px;
+  width: 224px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  display: none;
+}
+
+section.cards div.button {
+  display: flex;
+  justify-content: center;
+}
+section.cards div.button button {
+  font-size: 29px;
+  border-radius: 3px;
+  background: black;
+  color: white;
+  padding: 15px;
+}
+section.cards h2 {
+  font-size: 28px;
+  width: 100;
+  text-align: center;
+}
+section.cards div.images {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section.cards div.images div.container-card {
+  width: 455.22px;
+  height: 353px;
+  background: white;
+  margin: 12px;
+}
+section.cards div.images div.container-card div.img {
+  width: 455.22px;
+  height: 250px;
+  overflow: hidden;
+}
+section.cards div.images div.container-card div.img img {
+  height: 455.22px;
+  width: 455.22px;
+  direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  section.cards > div.images {
+    flex-wrap: wrap;
+    flex-direction: initial;
+  }
+  section.cards > div.images img {
+    width: 50%;
+  }
+}
+@media (min-width: 991px) {
+  section.cards > div.images img {
+    width: 33.3%;
+  }
+}
+body {
+  background: black;
+  font-family: "Lato", sans-serif;
+  color: white;
+}
+
+/*# sourceMappingURL=main.css.map */
