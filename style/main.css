@@ -143,39 +143,32 @@ section.cards h2 {
 }
 section.cards div.images {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 section.cards div.images div.container-card {
-  width: 455.22px;
-  height: 353px;
+  width: 70%;
   background: white;
   margin: 12px;
+  overflow: hidden;
 }
 section.cards div.images div.container-card div.img {
-  width: 455.22px;
-  height: 250px;
   overflow: hidden;
 }
 section.cards div.images div.container-card div.img img {
-  height: 455.22px;
-  width: 455.22px;
+  width: 100%;
   direction: column;
   justify-content: center;
 }
 
 @media (min-width: 768px) {
-  section.cards > div.images {
-    flex-wrap: wrap;
-    flex-direction: initial;
-  }
-  section.cards > div.images img {
-    width: 50%;
+  section.cards > div.images > div.container-card {
+    width: 45%;
   }
 }
 @media (min-width: 991px) {
-  section.cards > div.images img {
-    width: 33.3%;
+  section.cards > div.images > div.container-card {
+    width: 30%;
   }
 }
 body {

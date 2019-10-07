@@ -22,52 +22,33 @@ section.cards{
     }
     div.images{
         display: flex;
-        flex-direction: column;
-        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
         div.container-card{ 
-            width:455.22px;
-            height: 353px;
+            width: 70%;
             background: white;
             margin: 12px;
-           
+            overflow: hidden;
             div.img{
-                width:455.22px;
-                height: 250px;
                 overflow: hidden;
-                
-
                 img{
-                    height:455.22px;
-                    width: 455.22px;
+                    width: 100%;
                     direction: column;
                     justify-content: center;
                 }
-
             }
-            
-
         }
-           
-    }
-    
-    
+    }   
 } 
 
 @media (min-width: 768px) {
-    section.cards>div.images{
-        flex-wrap: wrap;
-        flex-direction: initial;
-        img{
-            width: 50%;
-        }
+    section.cards>div.images>div.container-card{ 
+        width: 45%;       
     }
 }
 
 @media (min-width: 991px) {
-    section.cards>div.images{
-        img{
-            
-            width: 33.3%;
-        }
+    section.cards>div.images>div.container-card{ 
+        width: 30%;       
     }
 }
