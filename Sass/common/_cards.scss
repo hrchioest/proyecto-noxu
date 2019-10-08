@@ -5,6 +5,7 @@ section.cards{
     div.button{
         display: flex;
         justify-content: center;
+        padding-top: 15px;
         button{
             font-size: 29px;
             border-radius: 3px;
@@ -13,7 +14,6 @@ section.cards{
             padding: 15px;
         
         }
-
     }
     h2{
         font-size: 28px;
@@ -24,18 +24,30 @@ section.cards{
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
+       
+        
         div.container-card{ 
             width: 70%;
             background: white;
             margin: 12px;
-            overflow: hidden;
+            height: 321px ;
+       
+            
             div.img{
+                height: 250px;
                 overflow: hidden;
+                
                 img{
                     width: 100%;
                     direction: column;
                     justify-content: center;
+                
                 }
+            }
+            div.description{
+                color:black;
+                
+            
             }
         }
     }   

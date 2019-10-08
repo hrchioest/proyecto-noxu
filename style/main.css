@@ -69,6 +69,7 @@ header div.nav nav ul li ul {
 }
 header div.nav div.search {
   padding-top: 15px;
+  padding-bottom: 13px;
 }
 header div.nav div.search input {
   font-size: 16px;
@@ -91,11 +92,32 @@ header div.nav div.search button:hover {
   color: white;
 }
 
+@media (min-width: 768px) {
+  header > div.nav {
+    display: flex;
+    width: initial;
+    flex-direction: row-reverse;
+    width: 89%;
+    justify-content: space-between;
+  }
+
+  header div.nav nav ul {
+    flex-direction: row;
+  }
+
+  header a {
+    width: initial;
+  }
+
+  label {
+    display: none;
+  }
+}
 section.main {
   display: flex;
   background-image: url("../imagen/hero-background.jpg");
   background-repeat: no-repeat;
-  height: 436px;
+  height: 470px;
   background-size: cover;
   justify-content: space-around;
 }
@@ -128,6 +150,7 @@ section.main div.right {
 section.cards div.button {
   display: flex;
   justify-content: center;
+  padding-top: 15px;
 }
 section.cards div.button button {
   font-size: 29px;
@@ -150,15 +173,19 @@ section.cards div.images div.container-card {
   width: 70%;
   background: white;
   margin: 12px;
-  overflow: hidden;
+  height: 321px;
 }
 section.cards div.images div.container-card div.img {
+  height: 250px;
   overflow: hidden;
 }
 section.cards div.images div.container-card div.img img {
   width: 100%;
   direction: column;
   justify-content: center;
+}
+section.cards div.images div.container-card div.description {
+  color: black;
 }
 
 @media (min-width: 768px) {
@@ -171,6 +198,58 @@ section.cards div.images div.container-card div.img img {
     width: 30%;
   }
 }
+section.items h2 {
+  font-size: 28px;
+  width: 100;
+  text-align: center;
+}
+section.items div.browse div.bloque-trio {
+  text-align: center;
+}
+section.items div.browse div.bloque-trio div.shoes img {
+  width: 70%;
+}
+section.items div.browse div.bloque-trio div.bloque-duo div.jeans img {
+  width: 70%;
+}
+section.items div.browse div.bloque-trio div.bloque-duo div.shirts img {
+  width: 70%;
+}
+section.items div.browse div.bloque-trio div.bloque-outfits div img {
+  width: 70%;
+}
+section.items div.browse div.bloque-outfits {
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  section.items > div.browse {
+    display: flex;
+    justify-content: center;
+  }
+
+  div.bloque-duo {
+    display: flex;
+  }
+  div.bloque-duo div.jeans {
+    width: 45%;
+  }
+  div.bloque-duo div.shirts {
+    width: 45%;
+  }
+}
+footer {
+  background: #343a40;
+  text-align: center;
+}
+footer h2 {
+  text-align: center;
+}
+footer img {
+  max-width: 70%;
+  height: auto;
+}
+
 body {
   background: black;
   font-family: "Lato", sans-serif;
