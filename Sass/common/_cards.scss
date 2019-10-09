@@ -12,6 +12,10 @@ section.cards{
             background: black;
             color: white;
             padding: 15px;
+            &:hover{
+                background: white;
+                color:rgb(34, 32, 32)
+            }
         
         }
     }
@@ -19,6 +23,7 @@ section.cards{
         font-size: 28px;
         width: 100;
         text-align: center;
+        
     }
     div.images{
         display: flex;
